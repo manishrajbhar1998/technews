@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 70.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background: rgb(219,230,253);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+    font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+    margin: 2rem 0;
+    color: rgba(21,19,60,0.5);
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+span{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.search-div{
+    width: 40vw;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-div h1{
+    margin-bottom: 20px;
+}
+
+.search-div input{
+    width: 40vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.pagination-div{
+    width: 40vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-div button{
+    margin: 0 10px;
+    padding: 10px;
+    background: #15133c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.stories-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card{
+    background: #fff;
+    padding: 4rem;
+    box-shadow: rgba(100,100,111,0.2);
+    min-width: 20rem;
+    width: 40vw;
+    color: #15133c;
+    border-radius: 5px;
+}
+
+.card-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-button a:last-child{
+    color: red;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+    .card,.search-div,.pagination-div{
+        min-width: 20rem;
+        width: 80vw;
+        padding: 20px;
+    }
+    
 }
